@@ -35,7 +35,7 @@ const city = e.target.elements.city.value
 const country = e.target.elements.country.value
 
 // The Constant Api fetch(Or Bring) Data From The API URL Using Method --> fetch( API URL ) And We Use ((await)) To Wait That Line To Finish And Never Go To The Next Line Till Finish That One
-const api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`)
+const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`)
 
 // Here Data Which Brought Or Fetched From The URL Is Not Cabable To Use So We Have To Use (json) Function On It Or On The Variable Which Carry It So ---> Another Const = await Api.json() ===> Here You Will Find The JSON Object Which You Can Use Directly ملاحظه هتلاقيه هنا اوبجيكت و ليس اراى We Can Call that Step Of json Is A Formatting For The Object (JSON Formatting Or Beautifier)
 const data = await api.json();
